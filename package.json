@@ -1,0 +1,38 @@
+{
+  "name": "json-stringify-fastpath",
+  "version": "1.0.0",
+  "description": "Validate and optimize JSON structures for V8 fast-path JSON.stringify",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xlakshan/fast-json-stringify.git"
+  },
+  "keywords": [
+    "json",
+    "v8",
+    "performance",
+    "stringify",
+    "optimization"
+  ],
+  "author": "Lakshan Perera",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node tests/optimizer.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/0xlakshan/fast-json-stringify/issues"
+  },
+  "homepage": "https://github.com/0xlakshan/fast-json-stringify#readme"
+}
