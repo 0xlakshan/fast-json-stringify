@@ -34,6 +34,7 @@
     "test": "node tests/optimizer.test.js"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.8",
     "typescript": "^5.0.0"
   },
   "bugs": {
